@@ -14,6 +14,7 @@ main {
   display: block;
   margin: 100px auto 100px auto;
 }
+
 .loginPage {
   margin: auto;
   width: 85%;
@@ -23,33 +24,12 @@ main {
   border-radius: 25px;
 }
 
-/*
-img {
-  display: none;
-}*/
 .content {
   padding: 119px 138px 119px 138px;
 }
 .top {
   display: flex;
   justify-content: space-around;
-}
-
-.middle {
-  display: grid;
-  grid-gap: 1em;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding-top: 20px;
-}
-
-.selctionD {
-  width: 204px;
-  height: 167px;
-  border-radius: 50px;
-}
-.selctionP {
-  height: 167px;
-  border-radius: 50px;
 }
 
 .btnTop {
@@ -64,6 +44,13 @@ img {
   border: #000000 solid 1px;
 }
 
+.reg {
+  grid-column: 1/2;
+}
+.login {
+  grid-column: 2/3;
+}
+
 .topText {
   font-family: Quattrocento Sans;
   font-style: italic;
@@ -72,11 +59,21 @@ img {
   color: #000000;
 }
 
-.reg {
-  grid-column: 1/2;
+.activeType {
+  border: #000000 solid 8px;
 }
-.login {
-  grid-column: 2/3;
+
+.middle {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 20px;
+}
+
+.pics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .doc {
@@ -84,9 +81,31 @@ img {
   grid-row: 2/3;
 }
 
+.selctionD {
+  width: 204px;
+  height: 167px;
+  border-radius: 50px;
+}
+
 .patient {
   grid-column: 1/2;
   grid-row: 1/2;
+}
+
+.selctionP {
+  height: 167px;
+  border-radius: 50px;
+}
+
+.activeMem {
+  filter: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.25));
+  border: 8px solid #005995;
+  background: #ffffff;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
 }
 
 .email {
@@ -105,18 +124,7 @@ img {
   grid-column: 2/4;
 }
 
-.pics {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.input {
-  display: flex;
-  justify-content: center;
-}
-
-.text {
+.textL {
   display: flex;
   align-items: center;
   padding-left: 25px;
@@ -149,12 +157,19 @@ img {
   color: #fffafa;
 }
 
-.activeMem {
-  filter: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.25));
-  border: 8px solid #005995;
+.textL {
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  width: 392px;
+  height: 64px;
   background: #ffffff;
-}
-
-.activeType {
-  border: #000000 solid 8px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+  text-align: left;
+  font-family: Quattrocento Sans;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
+  color: #555555;
 }
